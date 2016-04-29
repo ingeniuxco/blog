@@ -1,4 +1,8 @@
-#Site settings
+# Site settings
 tittle: Your awesome tittle
 baseurl: "/blog"
 url: "http://ingeniux.co"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
