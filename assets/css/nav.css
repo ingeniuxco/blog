@@ -1,24 +1,120 @@
+/* header */
+
+.group{
+
+}
+
+.header-blog{
+  padding-top: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid rgba( 0, 0, 0, 0.1 );
+}
+
+.blog-identity{
+  display: block;
+  margin: 0px auto;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding-bottom: 30px;
+  border-bottom: 3px double rgba( 0, 0, 0, 0.1 );
+}
+
+.blog-logo{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: block;
+}
+
+.navigation{
+  display: inline-block;
+  padding: 30px 0px 25px 0px;
+}
+
+.blog-description, .blog-description a{
+  display: block;
+  color: #999999;
+  transition: all 0.3s linear;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.blog-identity a:hover{
+  color: #333333;
+}
+
+
 /* Custom for nav */
 
-.nav-main a{
-  color: green;
+nav.menu-top div.nav-wrapper ul.hide-on-med-and-down > li > a{
+  color: #999999;
 }
 
-.nav-main .small-logo{
-  font-size: 22px;
+nav.menu-top div.nav-wrapper ul.hide-on-med-and-down > li > a:hover{
+  color: #000000;
+  background-color: transparent;
+
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
-.nav-logo{
-  position: relative;
-  top: 3px;
-  width: 27px;
-  height: 22px;
-  margin-left: 15px;
+nav.menu-top{
+  height: 40px;
+  line-height: 40px;
 }
 
-/*esta primero*/
-
-#rowNav{
-  position:relative;
-  z-index:9;
+.navigation{
+  display: inline-block;
 }
+
+nav.menu-top ul li{
+  margin: 10px 5px;
+  text-transform: uppercase;
+}
+
+nav.menu-top ul a,
+nav.menu-top ul a:hover{
+  text-decoration: none;
+
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+
+}
+
+nav.menu-top div.nav-wrapper ul.hide-on-med-and-down > li:hover{
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+nav.menu-top div.nav-wrapper ul li.current-page, nav.menu-top div.nav-wrapper ul li.current-page a,
+nav.menu-top div.nav-wrapper ul li.current-page, nav.menu-top div.nav-wrapper ul li.current-page a:hover {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+/* contenido */
+
+.content{
+  background: #f5f5f5;
+  padding-top: opx;
+}
+
+section{
+  margin: 0px;
+  padding: 0px;
+}
+
+footer.page-footer {
+    margin-top: 0px;
+  }

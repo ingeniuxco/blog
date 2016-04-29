@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Hello World Blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" media="screen" href="{{site.baseurl}}/assets/css/nav.css"/>
-  </head>
-  <body>
-    <div id="container">
-      <header class="group">
+<head>
+  <title>Ingeniux | Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen" href="{{site.baseurl}}/assets/css/nav.css"/>
+</head>
+<body>
+  <div id="container">
 
-        <div class="container" id="rowNav">
-          <nav class="white z-depth-0 nav-main" id="nav">
-            <div class="nav-wrapper">
-              <a href="#" class="brand-logo small-logo">
-                <img src="{{site.baseurl}}/img/logoGorro.svg" class="nav-logo" alt=""> </img>
-                <span class="nav-name-logo">Ingeniux</span>
-              </a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#">WI:DGET</a></li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Acerca de Ingeniux</a></li>
-              </ul>
-            </div>
-          </nav>
+    <header class="group white center">
+      <div class="row header-blog">
+        <div class="col s10 m8 offset-m2 offset-s1">
+          <div class="blog-identity">
+            <a class="blog-logo" href="#"><img class="responsive-img" src="{{site.baseurl}}/img/logotext.png" alt="grupo de usuarios de sioftware libre" /></a>
+            <a class="blog-description" href="#">grupo de usuarios de software libre</a>
+          </div>
+
+          <div class="navigation">
+            <nav class="menu-top white z-depth-0">
+              <div class="nav-wrapper">
+                <ul class="right hide-on-med-and-down">
+                  <li class="menu-item current-page"><a>Inicio</a></li>
+                  <li class="menu-item"><a>Eventos</a></li>
+                  <li class="menu-item"><a>WI:DGET</a></li>
+                  <li class="menu-item"><a>Acerca de Ingeniux</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+
         </div>
-
-        <h1 class="logo"><a href="/">Hello World Blog.</a></h1>
-      </header>
+      </div>
+    </header>
+    <div class="section grey lighten-4">
       <div id="content">
         {{ content }}
       </div>
     </div>
-  </body>
+
+    <footer class="page-footer green" id="footer-uno">
+      <div class="container">
+        <div class="row">
+          <div class="col l4 s12">
+            <p class="grey-text text-lighten-4" align="justify|">Este es un grupo conformado por estudiantes que pretenden promover la filosofía del movimiento de cultura libre enfocándose en los beneficios del uso del software distribuido bajo la misma ideología, mostrándolo como una alternativa económica y funcional al software privativo.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Recursos</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://ingeniuxco.wordpress.com">Blog</a></li>
+              <li><a class="grey-text text-lighten-3" href="http://stipelson.github.io/tour-it">Tour-it!</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+              <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+            </ul>
+          </div>
+          <div class="col l2 s12">
+            <h5>
+            <a href="https://www.facebook.com/ingeniuxco"><i class="fa fa-facebook fa-inverse" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com/ingeniuxco"><i class="fa fa-twitter fa-inverse" aria-hidden="true"></i></a>
+            <a href="https://www.github.com/ingeniuxco"><i class="fa fa-github fa-inverse" aria-hidden="true"></i></a>
+            </h5>
+            <p class="white-text">
+              ingeniux2016@googlegroups.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2015 - 2016 Ingeniux
+          <a class="grey-text text-lighten-4 right" href="#!">License</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
 </html>
