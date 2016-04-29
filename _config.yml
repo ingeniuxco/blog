@@ -4,5 +4,4 @@ baseurl: "/blog"
 url: "http://ingeniux.co"
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+markdown: redcarpet
