@@ -134,28 +134,3 @@ header .logo a:visited {
 *:first-child+html .group {
   min-height: 1px;
 }
-
-/* Custom for nav */
-
-.nav-main a{
-  color: green;
-}
-
-.nav-main .small-logo{
-  font-size: 22px;
-}
-
-.nav-logo{
-  position: relative;
-  top: 3px;
-  width: 27px;
-  height: 22px;
-  margin-left: 15px;
-}
-
-/*esta primero*/
-
-#rowNav{
-  position:relative;
-  z-index:9;
-}
