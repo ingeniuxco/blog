@@ -1,9 +1,5 @@
 /* header */
 
-.group{
-
-}
-
 .header-blog{
   padding-top: 30px;
   margin-bottom: 0px;
@@ -20,6 +16,10 @@
   margin-left: auto;
   padding-bottom: 30px;
   border-bottom: 3px double rgba( 0, 0, 0, 0.1 );
+}
+
+.blog-identity a:hover{
+  color: #333333;
 }
 
 .blog-logo{
@@ -41,10 +41,6 @@
   transition-duration: 0.3s;
   transition-timing-function: linear;
   transition-delay: 0s;
-}
-
-.blog-identity a:hover{
-  color: #333333;
 }
 
 
@@ -106,15 +102,115 @@ nav.menu-top div.nav-wrapper ul li.current-page, nav.menu-top div.nav-wrapper ul
 /* contenido */
 
 .content{
-  background: #f5f5f5;
-  padding-top: opx;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
+
+/* Posts principal */
+
+.post-tittle a{
+  color:#757575;
+  font-weight: 300;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.post-tittle a:hover{
+  color:black;
+  text-decoration: underline;
+}
+.post-image-center{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.crop-image{
+  /* max-width: 1200px; /* native or declared width of img src (if known) */
+  max-height: 320px;
+  overflow: hidden;
+}
+img.post-image{
+  /* corrects small inline gap at bottom of containing div */
+  display: block;
+  width: 100%; /* corrects obscure Firefox bug */
+  max-width: 100%;
+  /* just in case, to force correct aspect ratio */
+  height: auto !important;
+  display: block; /* corrects small inline gap at bottom of containing div */
+  width: 100% /* corrects obscure Firefox bug */
+  max-width: 100%;
+  /* just in case, to force correct aspect ratio */
+  height: auto !important;
+  /*width: auto\9;
+  /* ie8+9 - use modernizr instead of this \9 hack */
+  /* lt ie8 */
+  -ms-interpolation-mode: bicubic;
+  /* optionally force a minimum size if img src size is known: */
+  /* min-height: 320px; /* max-height of .crop-height */
+  /* min-width: 480px; /* proportional to above */
+}
+
+/* sections */
 
 section{
   margin: 0px;
   padding: 0px;
 }
 
+/* Footer */
+
 footer.page-footer {
-    margin-top: 0px;
-  }
+  margin-top: 0px;
+}
+
+/* thubmnails post*/
+
+.post-thumbnail{
+  background: #ffffff;
+  padding: 30px 30px 50px 30px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Widgets */
+
+.widget{
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+div.widget h4.widget-title {
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  line-height: 20px;
+  margin: 0px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+div.widget-content {
+  padding: 10px 10px 20px 10px;
+}
+
+div.widget ul {
+  padding: 0px 15px 0px 15px;
+}
+
+div.widget ul li {
+  color: #52565a;
+  display: block;
+  font-size: 14px;
+  padding: 0px 0px 12px 0px;
+}
+
+div.widget ul li.medio{
+  border-top: 1px solid #f2f2f2;
+  padding-top: 12px;
+}

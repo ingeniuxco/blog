@@ -34,47 +34,108 @@
         </div>
       </div>
     </header>
-    <div class="section grey lighten-4">
-      <div id="content">
-        {{ content }}
-      </div>
-    </div>
 
-    <footer class="page-footer green" id="footer-uno">
-      <div class="container">
-        <div class="row">
-          <div class="col l4 s12">
-            <p class="grey-text text-lighten-4" align="justify|">Este es un grupo conformado por estudiantes que pretenden promover la filosofía del movimiento de cultura libre enfocándose en los beneficios del uso del software distribuido bajo la misma ideología, mostrándolo como una alternativa económica y funcional al software privativo.</p>
+
+    <div class="section grey lighten-4"><!-- contenido -->
+      <div id="content" class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m12 l9 list-post">
+              {{ content }}
+            </div>
+            <div class="col s12 m12 l3">
+              <div class="widget">
+                <h4 class="widget-title">Twitter</h4>
+                <div class="widget-content">
+                  <a class="twitter-timeline"
+                  data-widget-id="600720083413962752"
+                  href="https://twitter.com/ingeniuxco"
+                  data-screen-name="ingeniuxco">
+                  Tweets by @{screen_name}
+                </a>
+              </div>
+            </div>
+
+            <div class="widget">
+              <h4 class="widget-title">Facebook</h4>
+              <div class="widget-content">
+                <div class="fb-page" data-href="https://www.facebook.com/ingeniuxco" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/ingeniuxco"><a href="https://www.facebook.com/ingeniuxco">Ingeniux</a></blockquote></div></div>
+              </div>
+            </div>
+
           </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Recursos</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="https://ingeniuxco.wordpress.com">Blog</a></li>
-              <li><a class="grey-text text-lighten-3" href="http://stipelson.github.io/tour-it">Tour-it!</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-              <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-            </ul>
-          </div>
-          <div class="col l2 s12">
-            <h5>
+
+        </div>
+      </div>
+
+    </div>
+  </div><!-- Fin contenido -->
+
+  <footer class="page-footer green" id="footer-uno">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 s12">
+          <p class="grey-text text-lighten-4" align="justify|">Este es un grupo conformado por estudiantes que pretenden promover la filosofía del movimiento de cultura libre enfocándose en los beneficios del uso del software distribuido bajo la misma ideología, mostrándolo como una alternativa económica y funcional al software privativo.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Recursos</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://ingeniuxco.wordpress.com">Blog</a></li>
+            <li><a class="grey-text text-lighten-3" href="http://stipelson.github.io/tour-it">Tour-it!</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+            <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+          </ul>
+        </div>
+        <div class="col l2 s12">
+          <h5>
             <a href="https://www.facebook.com/ingeniuxco"><i class="fa fa-facebook fa-inverse" aria-hidden="true"></i></a>
             <a href="https://www.twitter.com/ingeniuxco"><i class="fa fa-twitter fa-inverse" aria-hidden="true"></i></a>
             <a href="https://www.github.com/ingeniuxco"><i class="fa fa-github fa-inverse" aria-hidden="true"></i></a>
-            </h5>
-            <p class="white-text">
-              ingeniux2016@googlegroups.com
-            </p>
-          </div>
+          </h5>
+          <p class="white-text">
+            ingeniux2016@googlegroups.com
+          </p>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
-          © 2015 - 2016 Ingeniux
-          <a class="grey-text text-lighten-4 right" href="#!">License</a>
-        </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2015 - 2016 Ingeniux
+        <a class="grey-text text-lighten-4 right" href="#!">License</a>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-  </div>
+</div>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+  t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+
 </body>
 </html>

@@ -4,12 +4,28 @@ title: Hello World Blog
 ---
 
 <section id="main" class="group">
-  <h2>Posts</h2>
-  <ul class="posts">
+  <ul>
     {% for post in site.posts %}
+    <div class="post-thumbnail">
+      <h3 class="post-tittle"><a href="{{site.baseurl}}/{{post.url}}">{{ post.title }}</a></h3>
       <li>
-        <span class="post-date">{{ post.date | date_to_string }}</span> <a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
+        <span class="post-date grey-text text-light-1"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
       </li>
+      <li>
+        <p>
+          <div class="post-image-center">
+            <div class="crop-image">
+              <a href="{{site.baseurl}}/{{ post.url }}"><img class="post-image" src="{{site.baseurl}}/img/{{post.image}}" alt="Foto de {{post.title}}" /></a>
+            </div>
+          </div>
+        </p>
+      </li>
+
+      <h5 class="grey-text text-darken-1">{{ post.subtittle }}</h5>
+      <p class="grey-text text-light-1">
+        {{ post.meta }}
+      </p>
+    </div>
     {% endfor %}
   </ul>
 </section>
