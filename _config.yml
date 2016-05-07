@@ -5,5 +5,4 @@ baseurl: "/blog"
 url: "http://ingeniux.co"
 
 # Build settings
-markdown: redcarpet
 permalink: pretty
