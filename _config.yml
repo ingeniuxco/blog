@@ -1,7 +1,9 @@
 # Site settings
-tittle: Your awesome tittle
-baseurl: /blog
 exclude: ['README.markdown']
+tittle: Ingeniux
+baseurl: "/blog"
+url: "http://ingeniux.co"
+
 # Build settings
 markdown: redcarpet
 permalink: pretty
