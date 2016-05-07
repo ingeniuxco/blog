@@ -1,13 +1,12 @@
 ---
 layout: default
-title: Hello World Blog
 ---
 
 <section id="main" class="group">
   <ul>
     {% for post in site.posts %}
     <div class="post-thumbnail">
-      <h3 class="post-tittle"><a href="{{site.baseurl}}/{{post.url}}">{{ post.title }}</a></h3>
+      <h3 class="post-tittle"><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
       <li>
         <span class="post-date grey-text text-light-1"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
       </li>
@@ -15,7 +14,7 @@ title: Hello World Blog
         <p>
           <div class="post-image-center">
             <div class="crop-image">
-              <a href="{{site.baseurl}}/{{ post.url }}"><img class="post-image" src="{{site.baseurl}}/img/{{post.image}}" alt="Foto de {{post.title}}" /></a>
+              <a href="{{site.baseurl}}{{ post.url }}"><img class="post-image" src="{{site.baseurl}}/img/{{post.image}}" alt="Foto de {{post.title}}" /></a>
             </div>
           </div>
         </p>

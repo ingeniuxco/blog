@@ -62,7 +62,7 @@ nav.menu-top div.nav-wrapper ul.hide-on-med-and-down > li > a:hover{
 }
 
 nav.menu-top{
-  height: 40px;
+  height: 65px;
   line-height: 40px;
 }
 
@@ -213,4 +213,9 @@ div.widget ul li {
 div.widget ul li.medio{
   border-top: 1px solid #f2f2f2;
   padding-top: 12px;
+}
+
+.justify{
+  text-align: justify;
+  text-justify: inter-word;
 }

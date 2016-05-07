@@ -1,7 +1,7 @@
 # Site settings
 tittle: Your awesome tittle
-baseurl: "/blog"
-url: "http://ingeniux.co"
-
+baseurl: /blog
+exclude: ['README.markdown']
 # Build settings
 markdown: redcarpet
+permalink: pretty
